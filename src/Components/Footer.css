@@ -1,0 +1,124 @@
+.footer {
+    background-color: #0F172B;
+    padding: 20px;
+  }
+  
+  .footer_containers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .footer_column {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer_heading {
+    color: #FEA116;
+    font-size: 3vh;
+    font-family: 'Pacifico', cursive;
+    text-align: left;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
+  .text_footer, .text_footer2, .text_footer3, .text_footer31 {
+    color: #fff;
+    font-size: 2vh;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 30px;
+  }
+  
+  .icon_footer {
+    font-size: 3vh;
+  }
+  
+  .text_footer21 {
+    font-size: 4vh;
+    color: #fff;
+    display: flex;
+    gap: 25px;
+    margin-left: 35px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .inp_footer {
+    height: 50px;
+    width: 290px;
+    border: 1px solid #FEA116;
+    font-size: 2vh;
+    margin-top: 20px;
+    margin-left: 27px;
+    padding-left: 10px;
+    border-radius: 2px;
+  }
+  
+  .but_footer {
+    height: 40px;
+    width: 75px;
+    background-color: #FEA116;
+    color: #fff;
+    border-radius: 2px;
+    margin-top: 25px;
+    margin-left: -80px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .but_footer:active {
+    transform: scale(0.96);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .footer_containers {
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+  
+    .company, .opening {
+      grid-column: span 1;
+    }
+  
+    .contact, .newsletter {
+      grid-column: span 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer_containers {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .company, .opening, .contact, .newsletter {
+      grid-column: span 1;
+    }
+  
+    .footer_heading {
+      font-size: 2.5vh;
+    }
+  
+    .text_footer, .text_footer2, .text_footer3, .text_footer31 {
+      font-size: 2vh;
+    }
+  
+    .text_footer21 {
+      font-size: 2.5vh;
+     align-items: center;
+    }
+  
+    .inp_footer {
+      width:80%;
+      align-items: center;
+    }
+  
+    .but_footer {
+      margin-top: 23px;
+      height: 45px;
+    }
+  }
+  

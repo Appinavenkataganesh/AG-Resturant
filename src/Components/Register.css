@@ -1,0 +1,223 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Registration Container */
+  .main_reg {
+    background: rgba(0, 0, 0, 0.7) url(./img/bg.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+  }
+  
+  /* Registration Form Container */
+  .container_main {
+    height: auto;
+    width: 550px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Registration Header */
+  .txt_reg_head {
+    color: #fff;
+    background-color: #a88148;
+    font-size: 3vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 25px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  /* Input Fields */
+  .inp_reg_first,
+  .inp_email_reg {
+    height: 40px;
+    width: calc(100% - 120px);
+    border: 1px solid rgb(75, 71, 71);
+    padding-left: 20px;
+    font-size: 2vh;
+    margin: 10px 0 0 60px;
+    border-radius: 2px;
+  }
+  .area_reg
+  {
+    height: 50px;
+    width: calc(100% - 120px);
+    border: 1px solid rgb(75, 71, 71);
+    padding-left: 20px;
+    font-size: 2vh;
+    margin: 10px 0 0 60px;
+    border-radius: 2px;
+  }
+  .area_reg::placeholder
+  {
+    font-size: 10px;
+    padding-top: 15px;
+  }
+  
+  /* Flex Container for Mobile Number Section */
+  .mobile-number-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+    margin-top: 10px;
+  }
+  
+  .drop_mob {
+    height: 40px;
+    width: 60px;
+    border: 1px solid rgb(75, 71, 71);
+    font-size: 2vh;
+    border-radius: 2px;
+  }
+  
+  .inp_num_reg {
+    height: 40px;
+    width: 360px;
+    border: 1px solid rgb(75, 71, 71);
+    padding-left: 20px;
+    font-size: 2vh;
+    margin-left: 10px;
+    border-radius: 2px;
+  }
+  
+  /* Checkbox */
+  .check_reg {
+    height: 15px;
+    width: 15px;
+    margin-left: 60px;
+    margin-top: 2px;
+  }
+  
+  /* Checkbox Label */
+  .txt_check_reg {
+    font-size: 1.7vh;
+    margin-bottom: 10px;
+    color:  rgb(75, 71, 71);
+  }
+  
+  /* Footer Text */
+  .text_foot_reg {
+    font-size: 1.8vh;
+    margin-top: 10px;
+   text-align: center;
+  }
+  
+  /* Registration Button */
+  .button_reg {
+    height: 40px;
+    width: 200px;
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2196f3;
+    color: #fff;
+    margin-top: 15px;
+    margin-left: calc(50% - 100px);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+  .error_message {
+    color: red;
+    font-size: 0.8rem; /* Adjust as needed */
+    padding-left: 35px;
+  }
+
+  
+  
+  /* Media Queries */
+  
+  /* Mobile Styles */
+  @media (max-width: 600px) {
+    .container_main {
+      width: 90%;
+    }
+  
+    .inp_reg_first,
+    .inp_email_reg,
+    .area_reg {
+      width: calc(100% - 40px);
+      margin-left: 20px;
+    }
+  
+    .mobile-number-container {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  
+    .drop_mob {
+      margin-left: -18%;
+    }
+    .inp_num_reg  {
+        width: calc(100% - 22%);
+    }
+  
+    .check_reg {
+      margin-left: 20px;
+      height: 5%;
+    }
+  
+    .txt_reg_head {
+      font-size: 2.5vh;
+      padding: 20px 0;
+    }
+  
+    .txt_check_reg {
+      font-size: 0.6rem;
+      color: black;
+    }
+  
+    .button_reg {
+      margin-left: calc(50% - 100px);
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container_main {
+      width: 70%;
+    }
+  
+    .txt_reg_head {
+      font-size: 3vh;
+      padding: 20px 0;
+    }
+  
+    .inp_reg_first,
+    .inp_email_reg,
+    .area_reg {
+      width: calc(100% - 80px);
+      margin-left: 40px;
+    }
+  
+    .mobile-number-container {
+      margin-left: 40px;
+    }
+    .inp_num_reg{
+        width: calc(100% - 22%);
+      }
+  
+    .check_reg {
+      margin-left: 40px;
+    }
+  
+    .txt_check_reg,
+    .text_foot_reg {
+      margin-left: 40px;
+    }
+  
+    .button_reg {
+      margin-left: calc(50% - 100px);
+    }
+  }
+  

@@ -1,0 +1,150 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Login Container */
+  .main_login {
+    background: url(./img/food.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+  }
+  
+  /* Login Container */
+  .container_login {
+    height: 350px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Login Heading */
+  .heading_log {
+    font-size: 3vh;
+    color: black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 18px;
+  }
+  
+  /* Input Fields */
+  .inp_log {
+    height: 50px;
+    width: calc(100% - 40px);
+    border: 1px solid rgb(145, 129, 129);
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 2vh;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Login Button */
+  .butt_log {
+    height: 40px;
+    width: calc(100% - 40px);
+    background-color: #fea116;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 2.5vh;
+    margin-top: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+  }
+  
+  /* Sign Up Text */
+  .txt_sign {
+    font-size: 1.7vh;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  /* Checkbox */
+  .check_log {
+    height: 12px;
+    width: 12px;
+    margin-top: 22px;
+    margin-left: 25px;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+  
+  /* Remember Me Text */
+  .txt_rem {
+    font-size: 1.6vh;
+  }
+  
+  /* Forgot Password Text */
+  .txt_for {
+    font-size: 1.6vh;
+    margin-left: 58px;
+    color: rgb(168, 130, 130);
+    cursor: pointer;
+  }
+  .error_message1 {
+    color: red;
+    font-size: 0.5rem; /* Adjust the size as needed */
+    margin-left: 25px;
+  }
+  
+  
+  /* Mobile Styles */
+  @media (max-width: 600px) {
+    .container_login {
+      width: 95%;
+      padding:4%;
+    }
+     .heading_log {
+        margin-top: 3%;
+    } 
+  
+    .inp_log,
+    .butt_log {
+      width: 95%;
+      margin-left: 3%;
+      margin-right: 0;
+    }
+  
+    .check_log {
+      margin-left: 5%;
+    }
+  
+    .txt_for {
+      margin-left: 30%;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .container_login {
+      width: 50%;
+    }
+  
+    .inp_log,
+    .butt_log {
+      width: calc(100% - 50px);
+    }
+  
+    .check_log {
+      margin-left: 10%;
+    }
+  
+    .txt_for {
+      margin-left: 30%;
+    }
+  }
+  
